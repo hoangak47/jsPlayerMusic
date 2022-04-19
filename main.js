@@ -66,7 +66,7 @@ const app = {
     },
     {
       name: "Y Chang Xuân Sang",
-      singer: "Sia",
+      singer: "Nal",
       path: "./acsset/music/Y-Chang-Xuan-Sang-Nal.mp3",
       image: "./acsset/img/Y Chang Xuân Sang.webp",
     },
@@ -205,6 +205,8 @@ const app = {
         audio.play();
       } else {
         _this.nextSong();
+      _this.render();
+      _this.scrollToActiveSong();
         audio.play();
       }
     };
@@ -329,8 +331,8 @@ const app = {
     this.render();
 
     
-    repeatBtn.classList.toggle("active", this.isRepeat);
-    randomBtn.classList.toggle("active", this.isRandom);
+    !repeatBtn.classList.toggle("active", this.isRepeat);
+    !randomBtn.classList.toggle("active", this.isRandom);
   },
 };
 app.start();
