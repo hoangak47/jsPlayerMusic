@@ -66,7 +66,8 @@ const app = {
     },
     {
       name: "Y Chang Xuân Sang",
-      singer: "Sia",
+      singer: "Nal",
+
       path: "./acsset/music/Y-Chang-Xuan-Sang-Nal.mp3",
       image: "./acsset/img/Y Chang Xuân Sang.webp",
     },
