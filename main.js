@@ -207,9 +207,10 @@ l",
         audio.play();
       } else {
         _this.nextSong()
+        audio.play();
 _this.render();
       _this.scrollToActiveSong()
-        audio.play();
+
       }
     };
 
