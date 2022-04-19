@@ -329,8 +329,8 @@ const app = {
     this.render();
 
     
-    repeatBtn.classList.toggle("active", this.isRepeat);
-    randomBtn.classList.toggle("active", this.isRandom);
+    !repeatBtn.classList.toggle("active", this.isRepeat);
+    !randomBtn.classList.toggle("active", this.isRandom);
   },
 };
 app.start();
