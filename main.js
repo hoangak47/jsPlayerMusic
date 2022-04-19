@@ -143,7 +143,7 @@ l",
       $(".player").classList.remove("playing");
       _this.isPlaying = false;
       cd_thumb.style.borderRadius = "0";
-      cd_thumb.style.transition = "all 1s ease";
+      cd_thumb.style.transition = "all 2s ease";
       cdRotate.cancel();
     };
 
@@ -206,7 +206,8 @@ l",
       if (_this.isRepeat) {
         audio.play();
       } else {
-        _this.nextSong();
+        _this.nextSong()
+_this.render();
         audio.play();
       }
     };
