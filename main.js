@@ -66,9 +66,7 @@ const app = {
     },
     {
       name: "Y Chang Xuân Sang",
-      singer: "Na
-l",
-
+      singer: "Sia",
       path: "./acsset/music/Y-Chang-Xuan-Sang-Nal.mp3",
       image: "./acsset/img/Y Chang Xuân Sang.webp",
     },
@@ -143,7 +141,7 @@ l",
       $(".player").classList.remove("playing");
       _this.isPlaying = false;
       cd_thumb.style.borderRadius = "0";
-      cd_thumb.style.transition = "all 2s ease";
+      cd_thumb.style.transition = "all 1s ease";
       cdRotate.cancel();
     };
 
@@ -206,9 +204,8 @@ l",
       if (_this.isRepeat) {
         audio.play();
       } else {
-        _this.nextSong()
+        _this.nextSong();
         audio.play();
-
       }
     };
 
@@ -332,8 +329,8 @@ l",
     this.render();
 
     
-    !repeatBtn.classList.toggle("active", this.isRepeat);
-    !randomBtn.classList.toggle("active", this.isRandom);
+    repeatBtn.classList.toggle("active", this.isRepeat);
+    randomBtn.classList.toggle("active", this.isRandom);
   },
 };
 app.start();
