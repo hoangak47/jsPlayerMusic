@@ -208,8 +208,6 @@ l",
       } else {
         _this.nextSong()
         audio.play();
-_this.render();
-      _this.scrollToActiveSong()
 
       }
     };
